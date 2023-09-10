@@ -1,0 +1,7 @@
+let tUser: [string, number, boolean];
+
+tUser = ["hc", 1, true];
+
+type uUser = [number, string];
+
+const newUser: uUser = [112, "example@example.com"];
