@@ -34,3 +34,23 @@ function getSearchProducts<T>(products: T[]): T {
 const getMoreSearchProducts = <T>(products: T[]): T => {
   return products[2];
 };
+
+interface Database {
+  connection: string;
+  username: string;
+  password: string;
+}
+
+function anotherFunction<T, U extends Database>(valOne: T, valTwo: U): object {
+  return {
+    valOne,
+    valTwo,
+  };
+}
+
+anotherFunction(3, { connection: "test", username: "test", password: "test" });
+
+interface Quiz {
+  name: string;
+  type: string;
+}
