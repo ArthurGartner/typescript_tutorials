@@ -22,3 +22,5 @@ class Instragram extends TakePhoto {
 }
 
 const arthur = new Instragram("flash", "none", 2);
+
+arthur.getReelTime();
